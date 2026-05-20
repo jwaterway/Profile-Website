@@ -1,0 +1,155 @@
+:root {
+  color-scheme: light;
+  --bg: #eef4ff;
+  --surface: rgba(255, 255, 255, 0.86);
+  --text: #1f2a44;
+  --muted: #4f5d75;
+  --primary: #4c7af2;
+  --primary-dark: #365dc3;
+  --transition-duration: 220ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: linear-gradient(180deg, #f6f9ff 0%, var(--bg) 100%);
+  color: var(--text);
+}
+
+.hero {
+  position: relative;
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero__background,
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.hero__background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(27, 42, 74, 0.5) 0%,
+    rgba(27, 42, 74, 0.68) 100%
+  );
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 2rem 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  background: var(--surface);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 40px rgba(31, 42, 68, 0.2);
+  animation: fadeUp 700ms ease-out;
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.92);
+  box-shadow: 0 8px 30px rgba(31, 42, 68, 0.24);
+}
+
+h1,
+h2 {
+  margin: 1rem 0 0.4rem;
+}
+
+.bio {
+  margin: 0.75rem auto 1.5rem;
+  max-width: 50ch;
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.55;
+}
+
+.link-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.link-buttons a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  background: var(--primary);
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  transition: transform var(--transition-duration) ease,
+    background-color var(--transition-duration) ease,
+    box-shadow var(--transition-duration) ease;
+}
+
+.link-buttons a:hover,
+.link-buttons a:focus-visible {
+  background: var(--primary-dark);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 22px rgba(54, 93, 195, 0.35);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 3rem;
+}
+
+.skills-card {
+  width: min(760px, 100%);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(31, 42, 68, 0.09);
+  padding: 1.5rem 1.8rem;
+}
+
+.skills-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__content {
+    padding: 1.5rem;
+  }
+
+  .profile-photo {
+    width: 118px;
+    height: 118px;
+  }
+}
