@@ -6,6 +6,7 @@
   --muted: #4f5d75;
   --primary: #4c7af2;
   --primary-dark: #365dc3;
+  --transition-duration: 220ms;
 }
 
 * {
@@ -98,8 +99,9 @@ h2 {
   background: var(--primary);
   padding: 0.75rem 1rem;
   border-radius: 999px;
-  transition: transform 220ms ease, background-color 220ms ease,
-    box-shadow 220ms ease;
+  transition: transform var(--transition-duration) ease,
+    background-color var(--transition-duration) ease,
+    box-shadow var(--transition-duration) ease;
 }
 
 .link-buttons a:hover,
