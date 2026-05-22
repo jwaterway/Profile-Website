@@ -3,18 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jonathan - Drone Cinematographer & Music Creator</title>
+    <title>Jonathan Waterway - Creative Technologist</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://images.unsplash.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="hero">
+    <nav class="menu-bar" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#bio">Bio</a>
+      <a href="#passions">Passions</a>
+      <a href="#business">Consulting</a>
+      <a href="#skills">Skills</a>
+      <a href="#socials">Socials</a>
+    </nav>
+
+    <header id="home" class="hero">
       <img
         class="hero__background"
         src="Images/20230520_193358.jpg"
@@ -27,10 +36,12 @@
           src="Images/ProfilePicNature2.jpg"
           alt="Profile portrait"
         />
-        <h1>Hi, I'm Jonathan</h1>
+        <p class="hero-kicker">Creative Technologist</p>
+        <h1>Building Cinematic Media, Software, and Operational Systems</h1>
         <p class="bio">
-          I love expressing my creativity through electronic music, photography, and
-          other digital projects.
+          I design atmospheric visual and audio experiences, then translate that same
+          systems thinking into practical consulting for branding, retail operations,
+          and regulated markets.
         </p>
         <div class="link-buttons">
           <a
@@ -59,16 +70,175 @@
     </header>
 
     <main class="content">
-      <section class="skills-card">
+      <section id="bio" class="content-card">
+        <h2>Bio</h2>
+        <div class="bio-grid">
+          <article>
+            <h3>Creative Practice</h3>
+            <p>
+              My creative work blends aerial photography, electronic music production,
+              and digital experimentation to build immersive stories with atmosphere,
+              movement, and sound.
+            </p>
+          </article>
+          <article>
+            <h3>Consulting Work</h3>
+            <p>
+              I support businesses with operational systems, branding strategy,
+              retail and wholesale structure, and process optimization across
+              regulated and specialty markets.
+            </p>
+          </article>
+          <article>
+            <h3>Technology Bridge</h3>
+            <p>
+              Software and creative technology connect both sides of my work, helping
+              me turn artistic direction into repeatable systems, clearer workflows,
+              and measurable execution.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="passions" class="content-card">
+        <h2>Passions</h2>
+        <div class="passions-grid">
+          <article>
+            <h3>Aerial Photography</h3>
+            <p>
+              Capturing landscapes and urban spaces with cinematic framing, motion,
+              and light to create atmosphere-driven visual narratives.
+            </p>
+          </article>
+          <article>
+            <h3>Electronic Music Production</h3>
+            <p>
+              Producing textured, synth-forward compositions focused on rhythm,
+              tension, and emotional detail shaped by Detroit electronic culture.
+            </p>
+          </article>
+          <article>
+            <h3>Creative Technology</h3>
+            <p>
+              Prototyping digital workflows that connect media, software, and
+              interaction, from generative concepts to polished web experiences.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="business" class="content-card">
+        <h2>Business + Consulting</h2>
+        <p class="business-summary">
+          Consulting grounded in operational clarity, strong brand systems, and
+          channel strategy for regulated and specialty industries.
+        </p>
+        <div class="business-subsection">
+          <p class="consulting-label">Consulting Focus</p>
+          <p class="consulting-note">
+            I work where creative identity and practical execution meet: operations,
+            branding, retail systems, and process design.
+          </p>
+          <div class="business-grid">
+            <article>
+              <p class="business-card-type">Small Business</p>
+              <h3>Car Rental + Fleet Management</h3>
+              <p>
+                Fleet performance systems, maintenance workflows, and operational
+                process design for reliability and scalable growth.
+              </p>
+            </article>
+            <article>
+              <p class="business-card-type">Cannabis</p>
+              <h3>Retail, Wholesale, and Cultivation</h3>
+              <p>
+                Operating models, brand consistency, and channel strategy across
+                storefront retail, wholesale relationships, and cultivation flow.
+              </p>
+            </article>
+            <article>
+              <p class="business-card-type">Entheogenic Plants</p>
+              <h3>Retail, Wholesale, and Regulatory Path</h3>
+              <p>
+                Sales structure, market positioning, and compliance-aware planning for
+                emerging regulated categories.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="content-card">
         <h2>Skills</h2>
-        <ul class="skills-list">
-          <li>Drone Cinematography</li>
-          <li>Video Editing</li>
-          <li>Sound Design</li>
-          <li>C++</li>
-          <li>Java</li>
-        </ul>
+        <div class="skills-groups">
+          <article class="skills-group skills-group--primary">
+            <h3>Top Tier</h3>
+            <ul class="skills-list">
+              <li>Creative Technology</li>
+              <li>Electronic Music Production</li>
+              <li>Aerial Photography</li>
+              <li>Branding Strategy</li>
+              <li>Operations Systems</li>
+              <li>Software Development</li>
+              <li>Creative Direction</li>
+            </ul>
+          </article>
+          <article class="skills-group">
+            <h3>Secondary</h3>
+            <ul class="skills-list skills-list--secondary">
+              <li>Fleet Management</li>
+              <li>Retail Operations</li>
+              <li>AI Workflow Integration</li>
+              <li>UI / UX Design</li>
+              <li>Data Analysis</li>
+              <li>Workflow Automation</li>
+              <li>Git / GitHub</li>
+              <li>Visual Storytelling</li>
+              <li>Sound Design</li>
+              <li>Front-End Web Design</li>
+              <li>Small Business Operations</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="socials" class="content-card">
+        <h2>Socials</h2>
+        <div class="social-links">
+          <a
+            href="https://instagram.com/a2skyline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://www.youtube.com/@bit_9_Detroit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            YouTube
+          </a>
+          <a
+            href="https://github.com/jwaterway"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://soundcloud.com/bit_9"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            SoundCloud
+          </a>
+        </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>C 2026 Jonathan Waterway</p>
+    </footer>
   </body>
 </html>
